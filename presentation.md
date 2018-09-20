@@ -69,6 +69,8 @@ Note: Julia is mostly coded in Julia!
 
 ![](./assets/cpu_vs_lines.png)
 
+Note: 1. I wrote a flexible and fast ray tracer in Julia. It's 100 LOC. 2. "Mash: fast genome and metagenome distance estimation using MinHash" which used MinHashing for DNA sequence comparison. They implemented it in C, and it’s super fast. Someone else made python bindings. Which is all great. But someone implemented it in Julia now and made it super fast in under 100 lines of very readable code.
+
 
 ---
 
@@ -197,6 +199,8 @@ Note: IDE (Integrated Development Environment)
 * A number of libraries already far out-perform their equivalents in other languages.
 * People come to Julia because of its speed, but stay for the type-dispatch system.
 * Suffers from being "too new"
+
+Note: Douglas Bates, the developer of the `lme4` R package switched to Julia.
 
 
 ---
