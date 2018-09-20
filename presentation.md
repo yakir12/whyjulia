@@ -72,22 +72,13 @@ Note: Julia is mostly coded in Julia!
 
 ---
 
-# Multiple dispatch & typed systems
+# Dynamic & fast, how?
 
-1. Julia is built around types.
-2. Functions are dispatched by the types of their arguments.
-3. Efficient machine code is generated for each function.
+1. Just-in-time compilation (JIT): User-level code is compiled to machine code on-the-fly.
+2. Meticulous type system: Designed to maximize impact of JIT.
+3. Multiple dispatch: Function dispatch determined at compile time when possible, run time when not.
 
-
-Note: Julia: easy, dynamic, and fast. How?
-    Just-in-time compilation (JIT)
-        user-level code is compiled to machine code on-the-fly
-    Meticulous type system
-        designed to maximize impact of JIT
-        type inference: compiler determines types of variables
-    Multiple dispatch
-        functions are compiled for each set of argument types
-        function dispatch determined at compile time when possible, run time when not
+Note: Julia: easy, dynamic, and fast. How? JIT compilation times are slow for first run
 
 
 ---
@@ -189,11 +180,22 @@ Note: access to all their packages with zero overhead
 
 ---
 
+# Disadvantages
+
+* Ecosystems (e.g. packages, IDEs, debugger) not as mature as in other environments.
+* Because R and MATLAB are more purpose-specific, it can be harder to find what you're looking for.
+* So new it's harder to Google for answers.
+
+Note: IDE (Integrated Development Environment)
+
+---
+
 # Conclusions
 
 * Julia is considered by many one of the best interpreted languages out there.
 * A number of libraries already far out-perform their equivalents in other languages.
 * People come to Julia because of its speed, but stay for the type-dispatch system.
+* Suffers from being "too new"
 
 
 ---
