@@ -163,9 +163,11 @@ julia> false & missing = false
 
 # Zero overhead
 
+Full access to all the libraries and functionalities you already know.
+
 `PyCall.jl, JavaCall.jl, RCall.jl, CCall.jl, Mathematica.jl, MATLAB.jl`
 
-Note: access to all their packages with zero overhead
+Note: access to all their packages with zero overhead, you can call Julia home without losing all of your furniture in the move.
 
 
 
