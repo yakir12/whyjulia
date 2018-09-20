@@ -185,6 +185,7 @@ Note: access to all their packages with zero overhead
 * Ecosystems (e.g. packages, IDEs, debugger) not as mature as in other environments.
 * Because R and MATLAB are more purpose-specific, it can be harder to find what you're looking for.
 * So new it's harder to Google for answers.
+* Loading some packages is still a bit slow.
 
 Note: IDE (Integrated Development Environment)
 
