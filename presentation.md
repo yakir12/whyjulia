@@ -8,6 +8,13 @@ A new interpreted programming language *specifically* made for scientists and en
 Note: ~5 years ago at MIT
 
 
+---
+
+# Compiled vs. Interpreted
+
+
+Note: just a quick comparison between the two main types of languages: Compiled and interpreted.
+
 ----
 
 ## Compiled
@@ -18,7 +25,7 @@ Note: ~5 years ago at MIT
 * **Fast**: because more things are known about the program's constructs
 * Industry standard
 
-Note: Two main types of languages: Compiled and interpreted
+Note: because their code is so detailed and meticulous, the computer knows more about the program and can optimize it more.
 
 ----
 
@@ -37,16 +44,16 @@ Note: interpreted language is best suited for back and forth coding, test, look,
 
 # Two-language problem
 
-Note: R, Python, and MATLAB are coded mostly in C/++. Anything that is fast in those languages is coded in C/++.
+Note: to build complex compiled programs OR to have fast interpreted programs, you have 2 languages involved
 
 ----
 
-## Building good programs
+## Building compiled programs
 
 1. Brain-storm in an interpreted language for algorithm exploration and testing.
 2. Deliver a performant final-version in a compiled language.
 
-Note: Most compiled programs had a testing stage in an interpreted language, and most influential interpreted programs will have a compiled version.
+Note: Most compiled programs had a testing stage in an interpreted language
 
 ----
 
@@ -60,11 +67,11 @@ what you need?
              └── No:    You need to code in C/++.
 ```
 
-Note: for users of an interpreted language and its libraries.
+Note: R, Python, and MATLAB are coded mostly in C/++. Anything that is fast in those languages is coded in C/++.
 
 ----
 
-## What if the interpreted language is fast enough?
+## What if the interpreted language was fast enough?
 
 * [Benchmarks](https://julialang.org/benchmarks/)
 * Solves the two-language problem
@@ -72,7 +79,9 @@ Note: for users of an interpreted language and its libraries.
 
 Note: Julia is mostly coded in Julia!
 
+
 ----
+
 
 ## LOC versus speed
 
@@ -118,7 +127,7 @@ Math:
 2π*√3/5α₀
 ```
 
-Note: which one is closer to the mathematical formulation?
+Note: Unicode characters, degree symbol, Greek letters, square root, units. Easy to read and understand, scientists are not programmers.
 
 ----
 
@@ -151,7 +160,7 @@ uconvert(d, t)
 ```
 5 days
 
-Note: Unicode characters, degree symbol, Greek letters, square root, units. Easy to read and understand, scientists are not programmers.
+Note: if you use m, cm, feet, degrees, radians, etc
 
 
 ---
@@ -163,6 +172,8 @@ The concept of `missing` and `NaN` is treated correctly:
 julia> NaN + 1         = NaN
 
 julia> missing + 1     = missing
+
+julia> true | NaN        ERROR!
 
 julia> true | missing  = true
 
