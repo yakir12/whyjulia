@@ -162,7 +162,7 @@ Note: Consider that no other language has managed to get this concept of missing
 
 Full access to all the libraries and functionalities you already know.
 
-`PyCall.jl`, `JavaCall.jl`, `RCall.jl`, `CCall.jl`, `Mathematica.jl`, and `MATLAB.jl`
+`MATLAB.jl`, `RCall.jl`, `PyCall.jl`, `JavaCall.jl`, `Mathematica.jl`, and `ccall` keyword to call `C` (and other languages, like `Fortran` and `Rust`)
 
 Note: you can call Julia home without losing all of your furniture in the move.
 
